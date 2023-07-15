@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Summary For the document</title>
+</head>
+<body>
+<p><H2 th:text="${docsummary}"></H2></p>
+<p><button type="button" th:onclick="|window.location.href='/getQuestions'|">MCQ Questions</button></p>
+</body>
+</html>

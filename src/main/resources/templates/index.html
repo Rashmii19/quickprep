@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quick Prep</title>
+    </head>
+    <body>
+        <H1><span th:text="${maintext}"></span></H1>
+        <form action="#" th:action="@{/getSummary}" th:object="${thymeModel}" method="get">
+            <p>File Name: <input id="pathbox" type="text" th:field="*{text}" placeholder="Enter file name..." /></p>
+            <p><input type="submit" value="Submit" /> <input type="reset" value="Reset"></p>
+        </form>
+    </body>
+</html>

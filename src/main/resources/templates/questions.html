@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MCQ Questions</title>
+</head>
+<body>
+<span style="white-space: pre-line">
+<p><H2 th:text="${questions}"></H2></p>
+    <form action="#" th:action="@{/getResult}" th:object="${thymeModel}" method="get">
+            <p>Path: <input id="answerbox" type="text" th:field="*{text}" placeholder="Enter comma seperated options... (Eg: a,c,d)" /></p>
+            <p><input type="submit" value="Submit" /> <input type="reset" value="Reset"></p>
+        </form>
+</span>
+</body>
+</html>
